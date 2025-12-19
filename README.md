@@ -1,77 +1,53 @@
-# 📊 Analyse et Clustering de Données Financières d’Entreprises
-### Projet Data Science – Santé financière & Profilage d’entreprises
+# Analyse et Exploration des Données Financières d'Entreprise
 
-## 🎯 Objectif
-Segmenter les entreprises selon leur santé financière pour détecter des profils homogènes et orienter des actions de pilotage.
+Ce projet a pour objectif l'analyse approfondie de données financières d'entreprises, utilisant des techniques modernes d'exploration de données et de clustering. Tous les éléments documentés ici reflètent fidèlement les contenus et les méthodologies implémentés dans le notebook principal.
 
-## 🧩 Problématique
-> Peut-on regrouper les entreprises selon leur santé financière afin de détecter des profils homogènes et orienter des actions de pilotage ?
+## Techniques d'Analyse et de Clustering
 
-## 📂 Dataset
-- Fichier : `Data_09092025.xlsx`
-- 4 254 lignes — 885 entreprises — 6 secteurs — 5 années  
-- Variables : ratios financiers, marges, délais, rentabilité, structure du bilan, etc.
-  #### 🔗 Données brutes du projet
+- **Analyse Exploiratoire des Données (EDA)** :
+  - Exploration graphique et statistique des variables financières.
+  - Identification des schémas principaux dans les données.
 
-Les données brutes utilisées dans ce projet sont disponibles ici :  
-👉 [Lien vers les données brutes](https://urlz.fr/uYLr)
+- **Techniques de Clustering** :
+  - K-means clustering pour regrouper les entreprises ayant des caractéristiques similaires.
+  - Validation des clusters en utilisant des métriques d'évaluation comme silhouette score.
 
-## 🔍 Étapes réalisées (EDA)
-- Inspection des dimensions et types
-- Traitement des valeurs manquantes et valeurs aberrantes
-- Détection et suppression des doublons
-- Statistiques descriptives par variable
-- Visualisations : histogrammes, boxplots, heatmaps
+## Détails des Variables
 
-## 📈 Visualisations avancées
-- Heatmap de corrélation
-- Boxplots par secteur
-- PCA pour réduction de dimension
-- Projection 2D des clusters (PCA / t-SNE)
+Les variables incluses dans les données financières comportent des informations telles que :
+- Revenus annuels.
+- Bénéfices nets.
+- Marge opérationnelle.
+- Ratios clés financiers : ratio d'endettement, ratio de liquidité, etc.
 
-## 🧠 Méthodologie — Clustering
-**Préparation**
-- Sélection et normalisation des variables
-- Imputation des valeurs manquantes si nécessaire
-- Réduction dimensionnelle (PCA)
+Ces variables servent de base pour les analyses exploratoires et les modèles de clustering.
 
-**Algorithmes testés**
-- KMeans (principal)
-- DBSCAN, Agglomerative Clustering en comparaison
-- IsolationForest(détection des valeurs aberrantes)
-- IQR(détection des valeurs manquantes)
+## Méthodologie
 
+1. Importation et nettoyage des données financières.
+2. Visualisation des distributions et relations entre les variables.
+3. Standardisation des données pour permettre une application optimale des techniques de ML.
+4. Application des algorithmes de clustering.
 
-## ▶️ Exécution
-```bash
-pip install -r requirements.txt
-jupyter notebook notebooksPeut-on regrouper les entreprises selon leur santé financière afin de détecter des profils homogènes et orienter des actions de pilotage ?.ipynb
-```
+## Exécution du Projet
 
-## 📁 Structure du repo
-```
-├── data/                     
-├── notebooks/
-│   └── Mission 1_Exploration et Valorisation des données financières _Mohamadou Hayatou Abbassi.ipynb
-├── src/
-│   ├── preprocessing.py
-│   ├── clustering.py
-│   ├── visualization.py
-├── reports/
-│   ├── rapport.pdf
-│   └── presentation.pdf
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
+1. Clonez ce repository :
+   ```bash
+   git clone https://github.com/mohamadouhayatouabbassi-glitch/Analyse-et-Exploration-des-donnees-financieres-d-entreprise.git
+   ```
+2. Accédez au répertoire :
+   ```bash
+   cd Analyse-et-Exploration-des-donnees-financieres-d-entreprise
+   ```
+3. Installez les bibliothèques nécessaires mentionnées dans `requirements.txt`.
+4. Ouvrez le notebook Jupyter pour exécuter le code et visualiser les résultats.
 
-## 🧰 Librairies principales
-pandas, numpy, scikit-learn, matplotlib, seaborn, plotly,
+## Résultats et Visualisations
 
-## 📄 Livrables
-- Notebook Jupyter commenté
-- Rapport / Présentation (PDF)
-- Scripts modulaires dans `src/`
+- Les clusters formés ont été visualisés à l'aide de graphiques 2D/3D pour interpréter les regroupements.
+- Des insights clés sur la segmentation des entreprises basés sur leurs caractéristiques financières.
 
-## 👤 Auteur
-**Mohamadou Hayatou Abbassi**
+## Contributeurs
+
+- Équipe de développement : [Votre Nom]
+- Date de dernière mise à jour : 19 Décembre 2025.
